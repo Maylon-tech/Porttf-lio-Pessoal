@@ -74,6 +74,17 @@
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+
+    .skills .skills-content .column {
+        width: 100%;
+    }
+    .skills .skills-content .right{
+        width: 600px;
+    }
+    .skills .skills-content .right .info {
+        padding-top: 20px 50px 0 50px;{
+        
+    }
 }
 
 @media (max-width: 690px) {

@@ -9,3 +9,29 @@ $(document).ready(function() {
         }
     });
 });
+
+    $('.menu-btn').click(function() {
+        $('.navbar .menu').toggleClass('active');
+        $('.menu-btn i').toggleClass('active');
+    });
+
+    $('.carousel').owlCarousel({
+        margin:20,
+        loop:true,
+        autoplayTimeOut:2000,
+        autoplayHoverPauser:true,
+        Responive:{
+            0:{
+                item:1,
+                nav:false
+            },
+             600:{
+                item:2,
+                nav:false
+            },
+             1000:{
+                item:3,
+                nav:false
+            }
+        }
+    });

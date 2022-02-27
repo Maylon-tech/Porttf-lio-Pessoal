@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cliet - Portfólio</title>
+    <title>Client - Portfólio</title>
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -188,11 +189,11 @@
 
             <h2 class="title">Minha equipe</h2>
 
-            <div class="team-content">
+            <div class="carousel owl-carousel">
 
                <div class="card">
                    <div class="box">
-                       <ion-icon name="brush-outline"></ion-icon>
+                       <img src="img/pexels-italo-melo-2379004.jpg" alt="">
                        <div class="text">Michel Nemoto</div>
                        <p>
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla iure repellendus.
@@ -202,7 +203,7 @@
 
                <div class="card">
                    <div class="box">
-                       <ion-icon name="trending-up-outline"></ion-icon>
+                       <img src="img/pexels-royal-anwar-447186.jpg" alt="">
                        <div class="text">Nanda Tagawa</div>
                        <p>
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla iure repellendus.
@@ -212,8 +213,38 @@
 
                <div class="card">
                    <div class="box">
-                       <ion-icon name="code-slash-outline"></ion-icon>
+                       <img src="img/pexels-royal-anwar-450212.jpg" alt="">
                        <div class="text">Flávia Teixeira</div>
+                       <p>
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla iure repellendus.
+                       </p>
+                   </div>
+               </div>
+
+                <div class="card">
+                   <div class="box">
+                       <img src="img/pexels-cesar-galeão-3253500.jpg" alt="">
+                       <div class="text">Nanda Tagawa</div>
+                       <p>
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla iure repellendus.
+                       </p>
+                   </div>
+               </div>
+
+               <div class="card">
+                   <div class="box">
+                       <img src="img/pexels-andrea-piacquadio-840916.jpg" alt="">
+                       <div class="text">Flávia Teixeira</div>
+                       <p>
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla iure repellendus.
+                       </p>
+                   </div>
+               </div>
+
+               <div class="card">
+                   <div class="box">
+                       <img src="img/pexels-fauxels-3184611.jpg" alt="">
+                       <div class="text">Michel Nemoto</div>
                        <p>
                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla iure repellendus.
                        </p>
@@ -241,44 +272,69 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi quae earum beatae neque soluta incidunt alias obcaecati. Ex earum, cumque magni corporis sit voluptatem cupiditate iusto. Autem fuga quidem laboriosam laborum aut quia illum voluptatibus quisquam maiores enim vitae repellat quasi provident iusto maxime esse accusamus, a asperiores nisi quis iste delectus laudantium rem illo! Maiores, sequi. Distinctio, delectus.
 
                     </p>
-                    
-                    <div class="name-address">
-                        <div class="icon-box"></div>
-                        <div class="icon"></div>
 
-                        <div class="text-profile">
-                            <h3>Nome</h3>
-                            <span>Maylon Nemoto</span>
+                    <div class="icons">
+                    
+                        <div class="row">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Maylon Nemoto</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <ion-icon name="earth-outline"></ion-icon>
+                           <div class="info">
+                                <div class="head">Endereço</div>
+                                <div class="sub-title">D.C. Washigton</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">-mail</div>
+                                <div class="sub-title">JohnHack88@gmail.com</div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="column right">
-                        <div class="bars">
-                            <div class="info">
-                                <span>CSS</span>
-                                <span>75%</span>
+                <div class="column-right">
+
+                    <div class="text">Mensagem</div>
+
+                    <form action="#">
+                        <div class="fields">
+
+                            <div class="field-name">
+                                <input type="text" name="nome" placeholder="NOME" required>
                             </div>
-                            <div class="info">
-                                <span>Javascript</span>
-                                <span>60%</span>
+
+                            <div class="field-email">
+                                <input type="email" name="email" placeholder="EMAIL" required>
                             </div>
-                            <div class="info">
-                                <span>MySQL</span>
-                                <span>45%</span>
-                            </div>
-                            <div class="info">
-                                <span>Node.js</span>
-                                <span>35%</span>
-                            </div>
-                            <div class="info">
-                                <span>React.js</span>
-                                <span>45%</span>
-                            </div>
+
                         </div>
-                </div>  
-            </div>
-                    
+
+                        <div class="fields">
+
+                            <div class="field">
+                                <input type="text" name="sobrenome" placeholder="SOBRE-NOME" required>
+                            </div>
+
+                            <div class="field-textarea">
+                                <textarea cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                            </div>
+
+                            <div class="button">
+                                <button type="submit">Enviar</button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>                    
         </div>
     </section> 
     
@@ -286,5 +342,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 </html>
