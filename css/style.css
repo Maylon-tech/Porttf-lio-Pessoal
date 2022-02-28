@@ -14,6 +14,9 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 /* Nave bar  - Inicio */
+html {
+    scroll-behavior: smooth;
+}
 
 .max-width {
     max-width: 1300px;
@@ -23,8 +26,8 @@ font-family: 'Ubuntu', sans-serif;
 .navbar {
     position: fixed;
     width: 100%;
-    /*background: #00804b;*/
-    padding: 30px 0;
+    background: #00804b48;
+    padding: 20px 0;
     z-index: 999;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -73,8 +76,9 @@ font-family: 'Ubuntu', sans-serif;
 
 .home {
     display: flex;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)),url(../img/pexels-andrea-piacquadio-840916.jpg) no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)),url(../img/Image371-removebg-preview.png) no-repeat;
+    background-position: right;
+    background-size: contain;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -160,7 +164,7 @@ section .title::after {
     transform: translateX(-50%);
 }
 
-.about, .services, .skills, .team, .contact {
+.about, .services, .skills, .team, .contact, .footer {
     font-family: 'Roboto', sans-serif;  
 }
 .about .about-content,
@@ -180,10 +184,13 @@ section .title::after {
     content: 'Quem sou eu';
 }
 .about .about-content .left img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
     width: 400px;
     height: 400px;
     object-fit: cover;
     border-radius: 7px;
+    border: 2px solid #00804b;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.7);
 }
 .about .about-content .left {
     width: 45%;
@@ -374,6 +381,10 @@ section .title::after {
     font-weight: 500;
     margin-bottom: 10px;
 }
+
+
+    /*   Contato  - left */
+
 .contact .contact-content .left .icons {
     margin: 10px 0;
 }
@@ -397,4 +408,80 @@ section .title::after {
 }
 .contact .contact-content .row .info .sub-title {
     color: #333;
+}
+
+    /*   Contato  - right  */
+
+.contact .contact-content  .right {
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-content .right form {
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-content .right .fields-1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact .contact-content .right .fields-1 input {
+    padding: 10px;
+    width: 100%;
+}
+.contact .contact-content .right .fields-1 .name input{
+   width: 260px;
+   margin-right: 20px;
+}
+.contact .contact-content .right .fields-1 .email {
+    margin-right: 30px;
+}
+.contact .contact-content .right .fields-1 .email input{
+   width: 260px;
+}
+.contact .contact-content .right .fields-2 {
+    margin: 10px 0px;
+}
+
+.contact .contact-content .right .fields-2 .sobrenome input {
+    padding: 10px;
+    width: 100%;
+}
+
+
+.contact .contact-content .right .fields-2 .textarea textarea{
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.contact .contact-content .right .fields-2 .button button {
+    display: inline-block;
+    background-color: #00804b;
+    padding: 8px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 7px;
+    color: #fff;
+    border: 2px solid #00804b;
+    transition: all 0.3s ease;
+}
+.contact .contact-content .right .fields-2 .button button:hover {
+    background: transparent;
+    color: #00804b;
+}
+/*   Footer */
+
+.footer {
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+.footer span a {
+    color: #00804b;
+    text-decoration: none;
+}
+.footer span a:hover {
+    text-decoration: underline;
 }
